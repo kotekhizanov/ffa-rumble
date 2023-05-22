@@ -1,0 +1,64 @@
+:root {
+	--color: #ff7f50;
+}
+
+@font-face {
+	font-family: main-font;
+	src: url(../fonts/SpaceGarden-DOVm3.otf);
+}
+
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+
+	height: 100%;
+
+	font-family: main-font;
+
+	background-size: 10px 10px;
+	background-image: linear-gradient(to right, lightgrey 1px, transparent 1px),
+		linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+}
+
+.playerScreen {
+	background-color: var(--color);
+	border: 2px solid black;
+
+
+	height: 140px;
+	margin-top: -100px;
+	padding-top: 20px;
+	position: absolute;
+
+	font-size: 40px;
+
+	text-align: center;
+	top: 50%;
+	width: 100%;
+}
+
+.disabled{
+	display: none;
+}
+
+.rumbleArea{
+	position:absolute;
+	z-index:100;
+	left:0px;
+	top:0px;
+}
+
+
+.gameObject{
+	position:absolute;
+}
+
+.player {
+	background-color: var(--color);
+	border: 2px solid black;
+
+	height: 40px;
+	width: 40px;
+}
+
